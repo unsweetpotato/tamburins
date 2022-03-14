@@ -17,6 +17,22 @@
                 word-spacing: 0px;
                 line-height: 88px;
             }
+            .container {
+                position : relative;
+                overflow : hidden;
+                width: 100%;
+                padding-top: 56.25%; /* 16:9 Asct Ratio (diide 9 by 16 = 0.5625) */
+            }
+            /* Then style the iframe to fit in the container div with full height and width */
+            .responsive-iframe {
+              position: absolute;
+              top: 0;
+              left: 0;
+              bottom: 0;
+              right: 0;
+              width: 100%;
+              height: 100%;
+            }
         </style>
     </head>
 
@@ -26,8 +42,8 @@
         <div class="text1">
             tamburins test
         </div>
-        <div class="iframe1">
-            <p>Xem sản phẩm tại <a href="https://vr3d.vn/trienlam/menh-mang-coi-phat">Triển lãm VR3D.</a></p><iframe width="100%" height="100vh" src="https://vr3d.vn/trienlam/tuong-tac/menh-mang-coi-phat/embed.html" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="container">
+            <iframe class="responsive-iframe" src="https://vr3d.vn/trienlam/tuong-tac/menh-mang-coi-phat/embed.html" frameborder="0" allowvr allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>
 
         
